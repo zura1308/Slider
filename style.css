@@ -1,0 +1,58 @@
+body {
+    background-color: white;
+    width: 100%;
+    margin: 0px;
+    display: block;
+    overflow: hidden;
+}
+
+
+.main {
+    width: 1000px;
+    height: 950px;
+    margin: 0 auto;
+}
+
+
+.tv {
+    background-image: url(/image/tv.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1000px;
+    height: 950px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.show {
+    width: 630px;
+    height: 500px;
+    border-radius: 100px;
+    position: relative;
+    bottom: 675px;
+    left: 121px;
+}
+
+
+
+.btn {
+    position: relative;
+    bottom: 620px;
+    left: 290px;
+    width: 345px;
+    height: 0px;
+}
+
+
+button {
+    color: #eec667;
+    background-color: #3b3a42;
+    border-radius: 50%;
+    border-color: #3b3a42;
+    margin-left: 30px;
+}
+
+.hidden {
+    display: none;
+}
