@@ -5,13 +5,13 @@ const btn = document.querySelectorAll(".button");
 
 let i = 0;
 
-var intervalID = null;
+var intervalId = null;
 
-function intervalManager(settingInterval) { // ფუნქციას ვაძლევთ სახლეს და გა
+function intervalManager(settingInterval) { 
    if(settingInterval)
-     intervalID =  setInterval(changeImages, 3000); // თუ ინტევალID უდრის სეთინრვალს შეჩვალოს Image 3 წამში
+     intervalId =  setInterval(changeImages, 3000); 
    else
-     clearInterval(intervalID); // ან ქლეარი გაუკეთოს
+     clearInterval(intervalId); 
 }
 
 intervalManager(true); 
@@ -24,7 +24,7 @@ function changeImages() {
     i++;
 };
 
-btn.forEach((el, index) => { // forEach გადაყვება btn-ის ყველა ელემენტს და გვაძლევს ინდექს
+btn.forEach((el, index) => { 
     el.addEventListener("click", function() {
         showDiv.src = img[index].src;
         i = index;
